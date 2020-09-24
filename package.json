@@ -1,0 +1,20 @@
+{
+  "name": "react-native-code-push-cli",
+  "version": "0.0.1",
+  "description": "CodePush CLI for React Native, simplify CodePush commands",
+  "main": "src/index.js",
+  "repository": "https://github.com/thanhtunguet/react-native-code-push-cli",
+  "author": "thanhtunguet <ht@thanhtunguet.info>",
+  "license": "MIT",
+  "private": false,
+  "bin": {
+    "rn-code-push": "./index.js"
+  },
+  "dependencies": {
+    "commander": "^6.1.0",
+    "semver": "^7.3.2"
+  },
+  "peerDependencies": {
+    "appcenter-cli": "^2.7.0"
+  }
+}
