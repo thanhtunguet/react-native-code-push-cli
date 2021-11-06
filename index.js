@@ -15,7 +15,7 @@ program
   .option('-t, --target-binary-version <targetBinaryVersion>',  'Target binary version')
   .command('release')
   .action(() => {
-    const {username, appName} = JSON.stringify(
+    const {username, appName} = JSON.parse(
       fs.readFileSync(path.resolve(program.configFile), 'utf-8'),
     );
     let codePushCommand = `yarn appcenter codepush release-react -a ${username}/${appName}-${program.platform} -d ${program.deploymentName}`;
